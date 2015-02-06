@@ -169,3 +169,7 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+## Declare a cpp executable
+add_executable(keyboard_control src/keyboard_control.cpp)
+target_link_libraries(keyboard_control ${catkin_LIBRARIES})

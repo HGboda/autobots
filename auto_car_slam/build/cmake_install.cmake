@@ -89,7 +89,16 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_arduino/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_client/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_msgs/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_python/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_xbee/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_server/cmake_install.cmake")
   INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/car_slam/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_embeddedlinux/cmake_install.cmake")
+  INCLUDE("/home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_windows/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

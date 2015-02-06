@@ -18,7 +18,7 @@
 #define KEYCODE_L 0x44
 #define KEYCODE_F 0x41
 #define KEYCODE_B 0x42
-
+#define KEYCODE_SPACE 0x20
 class TeleopCar
 {
 public:
@@ -117,9 +117,10 @@ void TeleopCar::keyLoop()
 	  dirty = true;
 	  break;
 
-	default:
+	case KEYCODE_SPACE:
 	  ROS_DEBUG("STOP");
 	  velocity.data = 0;
+	  dirty = true;
 	  break;
 	}
    
