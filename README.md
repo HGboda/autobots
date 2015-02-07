@@ -12,7 +12,7 @@ Autonomous Vehicle Testbed project
 * mbed
   * Motor Control (command subscriber)
   * Encoder Publisher
-  * usage of rosserial
+  * Implement rosserial_arduino on mbed
 
 ## Hardware
   1. Hokuyo URG-04LX-UG01 LIDAR
