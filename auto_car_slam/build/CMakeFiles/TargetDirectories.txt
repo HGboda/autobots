@@ -10,6 +10,7 @@
 /home/zhili/hector_slam_tutorial/auto_car_slam/build/car_slam/CMakeFiles/actionlib_msgs_generate_messages_py.dir
 /home/zhili/hector_slam_tutorial/auto_car_slam/build/CMakeFiles/clean_test_results.dir
 /home/zhili/hector_slam_tutorial/auto_car_slam/build/CMakeFiles/doxygen.dir
+/home/zhili/hector_slam_tutorial/auto_car_slam/build/car_slam/CMakeFiles/encoder_odom_tf.dir
 /home/zhili/hector_slam_tutorial/auto_car_slam/build/rosserial/rosserial_client/CMakeFiles/float64_test.dir
 /home/zhili/hector_slam_tutorial/auto_car_slam/build/car_slam/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 /home/zhili/hector_slam_tutorial/auto_car_slam/build/car_slam/CMakeFiles/geometry_msgs_generate_messages_lisp.dir

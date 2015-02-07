@@ -231,6 +231,20 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+car_slam/CMakeFiles/encoder_odom_tf.dir/rule:
+	cd /home/zhili/hector_slam_tutorial/auto_car_slam/build && $(MAKE) -f CMakeFiles/Makefile2 car_slam/CMakeFiles/encoder_odom_tf.dir/rule
+.PHONY : car_slam/CMakeFiles/encoder_odom_tf.dir/rule
+
+# Convenience name for target.
+encoder_odom_tf: car_slam/CMakeFiles/encoder_odom_tf.dir/rule
+.PHONY : encoder_odom_tf
+
+# fast build rule for target.
+encoder_odom_tf/fast:
+	cd /home/zhili/hector_slam_tutorial/auto_car_slam/build && $(MAKE) -f car_slam/CMakeFiles/encoder_odom_tf.dir/build.make car_slam/CMakeFiles/encoder_odom_tf.dir/build
+.PHONY : encoder_odom_tf/fast
+
+# Convenience name for target.
 car_slam/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/zhili/hector_slam_tutorial/auto_car_slam/build && $(MAKE) -f CMakeFiles/Makefile2 car_slam/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : car_slam/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -454,6 +468,30 @@ tf_generate_messages_py/fast:
 	cd /home/zhili/hector_slam_tutorial/auto_car_slam/build && $(MAKE) -f car_slam/CMakeFiles/tf_generate_messages_py.dir/build.make car_slam/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
+src/encoder_odom_tf.o: src/encoder_odom_tf.cpp.o
+.PHONY : src/encoder_odom_tf.o
+
+# target to build an object file
+src/encoder_odom_tf.cpp.o:
+	cd /home/zhili/hector_slam_tutorial/auto_car_slam/build && $(MAKE) -f car_slam/CMakeFiles/encoder_odom_tf.dir/build.make car_slam/CMakeFiles/encoder_odom_tf.dir/src/encoder_odom_tf.cpp.o
+.PHONY : src/encoder_odom_tf.cpp.o
+
+src/encoder_odom_tf.i: src/encoder_odom_tf.cpp.i
+.PHONY : src/encoder_odom_tf.i
+
+# target to preprocess a source file
+src/encoder_odom_tf.cpp.i:
+	cd /home/zhili/hector_slam_tutorial/auto_car_slam/build && $(MAKE) -f car_slam/CMakeFiles/encoder_odom_tf.dir/build.make car_slam/CMakeFiles/encoder_odom_tf.dir/src/encoder_odom_tf.cpp.i
+.PHONY : src/encoder_odom_tf.cpp.i
+
+src/encoder_odom_tf.s: src/encoder_odom_tf.cpp.s
+.PHONY : src/encoder_odom_tf.s
+
+# target to generate assembly for a file
+src/encoder_odom_tf.cpp.s:
+	cd /home/zhili/hector_slam_tutorial/auto_car_slam/build && $(MAKE) -f car_slam/CMakeFiles/encoder_odom_tf.dir/build.make car_slam/CMakeFiles/encoder_odom_tf.dir/src/encoder_odom_tf.cpp.s
+.PHONY : src/encoder_odom_tf.cpp.s
+
 src/keyboard_control.o: src/keyboard_control.cpp.o
 .PHONY : src/keyboard_control.o
 
@@ -491,6 +529,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... edit_cache"
+	@echo "... encoder_odom_tf"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -513,6 +552,9 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
+	@echo "... src/encoder_odom_tf.o"
+	@echo "... src/encoder_odom_tf.i"
+	@echo "... src/encoder_odom_tf.s"
 	@echo "... src/keyboard_control.o"
 	@echo "... src/keyboard_control.i"
 	@echo "... src/keyboard_control.s"

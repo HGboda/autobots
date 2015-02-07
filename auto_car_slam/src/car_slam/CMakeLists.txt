@@ -173,3 +173,5 @@ include_directories(
 ## Declare a cpp executable
 add_executable(keyboard_control src/keyboard_control.cpp)
 target_link_libraries(keyboard_control ${catkin_LIBRARIES})
+add_executable(encoder_odom_tf src/encoder_odom_tf.cpp)
+target_link_libraries(encoder_odom_tf ${catkin_LIBRARIES})
