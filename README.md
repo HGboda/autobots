@@ -20,3 +20,6 @@ Autonomous Vehicle Testbed project
   3. Beaglebone Black
   4. h-bridge circuit
   5. Chassis car with two wheel encoders
+
+## Reference
+ [BeagleBone Black Ubuntu Setup](http://rayhightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)
