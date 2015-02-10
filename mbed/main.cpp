@@ -22,7 +22,7 @@ DigitalOut Left_Forward(p8);
 DigitalOut Left_Backward(p9);
 DigitalOut Left_Enable(p10);
 InterruptIn right_encoder(p21);
-InterruptIn left_encoder(p22);
+InterruptIn left_encoder(p23);
 
 // test
 //DigitalOut Simulate_left(p11);
@@ -63,14 +63,15 @@ void velocityControl(const std_msgs::Int8& velocity_msg)
 
 // variables for encoder update
 unsigned long seq = 0; //record no. of encoder publishers
-volatile unsigned long int r_count=0;
-volatile unsigned long int l_count=0;
-unsigned long int prev_r_count=0;
-unsigned long int prev_l_count=0;
+volatile long int r_count=0;
+volatile long int l_count=0;
+long int prev_r_count=0;
+long int prev_l_count=0;
 double distance=0.0;
 double theta=0.0;
 long double x_position=0.0;
 long double y_position=0.0;
+static int flag = 0;
 
 // ros init
 ros::NodeHandle nh;
@@ -95,8 +96,13 @@ void getEncoderTicks()
 
 
 // handle encoder inputs, store in r_count, l_count
-void right_slit(){  r_count+=1;}
-void left_slit(){   l_count+=1;}
+void right_slit(){
+    r_count+= flag;
+}
+      
+void left_slit(){
+    l_count+=flag;
+}
 
 void reset_odo(){
     __disable_irq();
@@ -119,7 +125,7 @@ void stop(){
     old_command = -1;
     }
 void forward(){led1 = !led1; r_count += 10; l_count += 10;}
-void back(){led2 =!led2; r_count+=5; l_count+=5;}
+void back(){led2 =!led2; r_count-=5; l_count-=5;}
 void left(){led3 =!led3; r_count+=10; l_count+=1; }
 void right(){led4 =!led4; r_count+=1; l_count+=10;}
 
@@ -170,12 +176,14 @@ int main()
                 stop();
                 ticker_movement.attach_us(&forward,1000000);
                 old_command = 1;
+                flag = 1;
                 break;
             // move back
             case 2:
                 stop();
                 ticker_movement.attach_us(&back,1000000);
                 old_command = 2;
+                flag = -1;
                 break;
             //turn left
             case 3:
