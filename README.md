@@ -21,5 +21,8 @@ Autonomous Vehicle Testbed project
   4. h-bridge circuit
   5. Chassis car with two wheel encoders
 
+## Demo of 2D mapping
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "2D mapping of mlab")
+
 ## Reference
  [BeagleBone Black Ubuntu Setup](http://rayhightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)
