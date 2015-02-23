@@ -1,6 +1,7 @@
 # autobots
-Autonomous Vehicle Testbed project
-Team Member: Zhi Li, Srinivasan Ekambaram
+  Autonomous Vehicle Testbed project
+  
+  Team Member: Zhi Li, Srinivasan Ekambaram
 
 ## Demo of 2D mapping
 ![alt text](https://github.com/snugglelamb/autobots/blob/master/resources/mlab_mapping_gif.gif "2D mapping of mlab")
