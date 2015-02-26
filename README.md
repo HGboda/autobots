@@ -1,5 +1,11 @@
 # autobots
-Autonomous Vehicle Testbed project
+  Autonomous Vehicle Testbed project
+  
+  Team Member: Zhi Li, Srinivasan Ekambaram
+
+## Demo of 2D mapping
+![alt text](https://github.com/snugglelamb/autobots/blob/master/resources/mlab_mapping_gif.gif "2D mapping of mlab")
+
 ## Software
 * ROS
   * Control
@@ -20,9 +26,6 @@ Autonomous Vehicle Testbed project
   3. Beaglebone Black
   4. h-bridge circuit
   5. Chassis car with two wheel encoders
-
-## Demo of 2D mapping
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "2D mapping of mlab")
 
 ## Reference
  [BeagleBone Black Ubuntu Setup](http://rayhightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)
