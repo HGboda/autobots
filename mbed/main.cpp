@@ -116,18 +116,79 @@ void reset_odo(){
     seq = 0;
 }
 
-void stop(){
-    ticker_movement.detach();
+void brake(){
     led1 = 0;
     led2 = 0;
     led3 = 0;
     led4 = 0;
+    Right_Forward = 1;
+    Right_Backward = 1;
+    Right_Enable = 1;
+    Left_Forward = 1;
+    Left_Backward = 1;
+    Left_Enable = 1;
+    }
+
+void stop(){
+    ticker_movement.detach();
+    brake();
     old_command = -1;
     }
-void forward(){led1 = !led1; r_count += 10; l_count += 10;}
-void back(){led2 =!led2; r_count-=5; l_count-=5;}
-void left(){led3 =!led3; r_count+=10; l_count+=1; }
-void right(){led4 =!led4; r_count+=1; l_count+=10;}
+void forward(){
+    led1 = !led1; 
+    // simulation purpose
+//    r_count += 10; 
+//    l_count += 10;
+    Right_Forward = 1;
+    Right_Backward = 0;
+    Right_Enable = 1;
+    Left_Forward = 1;
+    Left_Backward = 0;
+    Left_Enable = 1;
+    wait(0.5);
+    brake();
+    }
+void back(){
+    led2 =!led2;
+    // simulation purpose
+//    r_count-=5;
+//     l_count-=5;
+    Right_Forward = 0;
+    Right_Backward = 1;
+    Right_Enable = 1;
+    Left_Forward = 0;
+    Left_Backward = 1;
+    Left_Enable = 1;
+    wait(0.5);
+    brake();
+     }
+void left(){
+    led3 =!led3;
+    // simulation purpose
+//    r_count+=10;
+//    l_count+=1;
+    Right_Forward = 1;
+    Right_Backward = 0;
+    Right_Enable = 1;
+    Left_Forward = 1;
+    Left_Backward = 1;
+    Left_Enable = 1; 
+    wait(0.5);
+    brake();
+    }
+void right(){
+    led4 =!led4;
+//    r_count+=1;
+//    l_count+=10;
+    Right_Forward = 1;
+    Right_Backward = 1;
+    Right_Enable = 1;
+    Left_Forward = 1;
+    Left_Backward = 0;
+    Left_Enable = 1;
+    wait(0.5);
+    brake();
+    }
 
 // send signal to ROS to process msgs in queue
 void spin(){nh.spinOnce();}
@@ -148,6 +209,7 @@ void spin(){nh.spinOnce();}
 
 int main()
 {
+    brake();
     reset_odo();
     right_encoder.fall(right_slit);
     left_encoder.fall(left_slit);
