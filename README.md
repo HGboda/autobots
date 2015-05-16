@@ -25,6 +25,7 @@
   * Platform: Beaglebone Black (ubuntu 12.04 + ROS Hydro)
   * Hardware: mbed LPC1768, H-bridge, Wifi Dongle (WNA1100), Adafruit Powerboost 500
   * Battery: Adafruit Lithium Ion 3.7V 6600mAh
+  
 [Param sheet](https://www.dropbox.com/sh/ujqpz4cp4h5fzak/AAAGaUGlNwOzu-JbHHehNdq4a?dl=0) for parts mentioned above
 
 
