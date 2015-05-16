@@ -1,7 +1,10 @@
 # autobots
-  Autonomous Vehicle Testbed project
+  Autonomous Vehicle Testbed (Independent Study)
   
-  Team Member: Zhi Li, Srinivasan Ekambaram
+  Zhi Li
+
+## Introduction
+  This autonomous vehicle testbed is designed to be a common platform for multiple research topics in autonomous driving, including scenario handling for safety assurance, localization and autonomous navigation. The car could now perform real time exploration and waypoint navigation using the LIDAR on top, as well as the traditional approach of building a map first and then achieve navigation capability based on the map generated. A PI controller is used to keep the car moving at a set speed calculated out of encoder ticks per sec, and could also enable straight line driving in the meantime. Line following capability enables the car to follow a preset track and cope with different turning scenarios, the detection of lanechange could also be achieved leveraging those IR sensors.
 
 ## Demo of 2D mapping
 ![alt text](https://github.com/snugglelamb/autobots/blob/master/resources/mlab_mapping_gif.gif "2D mapping of mlab")
@@ -27,5 +30,4 @@
   4. h-bridge circuit
   5. Chassis car with two wheel encoders
 
-## Reference
- [BeagleBone Black Ubuntu Setup](http://rayhightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)
+

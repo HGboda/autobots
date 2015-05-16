@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+<param name="/use_sim_time" value="false"/>ros
+
+<!--
+<node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo_node" />
+<node pkg="car_slam" type="encoder_odom_tf" name="odom_tf_broadcaster"/>
+<node pkg="rosserial_python" type="serial_node.py" name="connection_to_car" args="/dev/ttyACM1"/>
+-->
+
+
+<node pkg="rviz" type="rviz" name="rviz" 
+args="-d $(find car_slam)/rviz_cfg/mapping_demo.rviz"/>
+
+<include file="$(find car_slam)/launch/hector_mapping_demo.launch"/>
+<include file="$(find car_slam)/launch/geotiff_mapper.launch"/>
+
+</launch>
