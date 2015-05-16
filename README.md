@@ -51,8 +51,9 @@
     * ir sensor data reading
   * bash scripts
 
-## Demo of 2D mapping
+## Demo
+### 2D mapping
 ![alt text](https://github.com/snugglelamb/autobots/blob/master/resources/mlab_mapping_gif.gif "2D mapping of mlab")
-## Demo of Simple Navigation (exploration)
+### Simple Navigation (exploration)
 ![alt text](https://github.com/snugglelamb/autobots/blob/master/resources/nav_w:pid.gif "2D navigation with exploration")
 
