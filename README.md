@@ -13,24 +13,18 @@
   * static obstacle avoidance
   * PI control w/ straight driving
   * line following scenario handling
-  
+
+![alt text](https://github.com/snugglelamb/autobots/blob/master/resources/IMG_3020.jpg "overview of the car")
+
 ## Hardware
-  Development Environment
-    
-  OS: Ubuntu 12.04
-
-  ROS ver: Hydro
-
-  LIDAR: Hokuyo URG-04LX-UG01
-
-  Robot car base: DFRobot with encoder
-
-  Platform: Beaglebone Black (ubuntu 12.04 + ROS Hydro)
-
-  Hardware: mbed LPC1768, H-bridge, Wifi Dongle (WNA1100), Adafruit Powerboost 500
-
-  Battery: Adafruit Lithium Ion 3.7V 6600mAh
-
+### Development Environment:
+  * OS: Ubuntu 12.04
+  * ROS ver: Hydro
+  * LIDAR: Hokuyo URG-04LX-UG01
+  * Robot car base: DFRobot with encoder
+  * Platform: Beaglebone Black (ubuntu 12.04 + ROS Hydro)
+  * Hardware: mbed LPC1768, H-bridge, Wifi Dongle (WNA1100), Adafruit Powerboost 500
+  * Battery: Adafruit Lithium Ion 3.7V 6600mAh
 [Param sheet](https://www.dropbox.com/sh/ujqpz4cp4h5fzak/AAAGaUGlNwOzu-JbHHehNdq4a?dl=0) for parts mentioned above
 
 
